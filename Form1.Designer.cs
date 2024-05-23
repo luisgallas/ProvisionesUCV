@@ -33,7 +33,9 @@
             msgerror = new Label();
             textBoxusuario = new TextBox();
             textBoxcontrasena = new TextBox();
-            button1 = new Button();
+            buttonaceptar = new Button();
+            button2 = new Button();
+            buttoncancelar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             // msgerror
             // 
             msgerror.AutoSize = true;
-            msgerror.Location = new Point(197, 245);
+            msgerror.Location = new Point(191, 244);
             msgerror.Name = "msgerror";
             msgerror.Size = new Size(155, 20);
             msgerror.TabIndex = 2;
@@ -73,29 +75,51 @@
             // 
             // textBoxcontrasena
             // 
-            textBoxcontrasena.Location = new Point(197, 199);
+            textBoxcontrasena.Location = new Point(191, 197);
             textBoxcontrasena.Name = "textBoxcontrasena";
             textBoxcontrasena.PasswordChar = '*';
             textBoxcontrasena.PlaceholderText = "Ingrese se contrasena";
             textBoxcontrasena.Size = new Size(161, 27);
             textBoxcontrasena.TabIndex = 4;
             // 
-            // button1
+            // buttonaceptar
             // 
-            button1.Location = new Point(197, 296);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            buttonaceptar.Location = new Point(186, 300);
+            buttonaceptar.Name = "buttonaceptar";
+            buttonaceptar.Size = new Size(94, 29);
+            buttonaceptar.TabIndex = 5;
+            buttonaceptar.Text = "Aceptar";
+            buttonaceptar.UseVisualStyleBackColor = true;
+            buttonaceptar.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(531, 366);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 6;
+            button2.Text = "Registrar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // buttoncancelar
+            // 
+            buttoncancelar.Location = new Point(322, 300);
+            buttoncancelar.Name = "buttoncancelar";
+            buttoncancelar.Size = new Size(94, 29);
+            buttoncancelar.TabIndex = 7;
+            buttoncancelar.Text = "Cancelar";
+            buttoncancelar.UseVisualStyleBackColor = true;
+            buttoncancelar.Click += buttoncancelar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttoncancelar);
+            Controls.Add(button2);
+            Controls.Add(buttonaceptar);
             Controls.Add(textBoxcontrasena);
             Controls.Add(textBoxusuario);
             Controls.Add(msgerror);
@@ -115,6 +139,8 @@
         private Label msgerror;
         private TextBox textBoxusuario;
         private TextBox textBoxcontrasena;
-        private Button button1;
+        private Button buttonaceptar;
+        private Button button2;
+        private Button buttoncancelar;
     }
 }

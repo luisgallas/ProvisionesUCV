@@ -21,9 +21,21 @@ namespace ProvisionesUCV
             }
             else
             {
-                msgerror.Visible = true;   
+                msgerror.Visible = true;
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registrar ventana1 = new Registrar();
+            ventana1.Show();
+        }
+
+        private void buttoncancelar_Click(object sender, EventArgs e)
+        {
+            textBoxusuario.Clear(); 
+            textBoxcontrasena.Clear(); 
         }
     }
 }
