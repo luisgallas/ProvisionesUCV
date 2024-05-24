@@ -41,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(191, 69);
+            label1.Location = new Point(99, 80);
             label1.Name = "label1";
             label1.Size = new Size(59, 20);
             label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(197, 151);
+            label2.Location = new Point(99, 149);
             label2.Name = "label2";
             label2.Size = new Size(83, 20);
             label2.TabIndex = 1;
@@ -59,32 +59,33 @@
             // msgerror
             // 
             msgerror.AutoSize = true;
-            msgerror.Location = new Point(191, 244);
+            msgerror.ForeColor = Color.Red;
+            msgerror.Location = new Point(131, 196);
             msgerror.Name = "msgerror";
-            msgerror.Size = new Size(155, 20);
+            msgerror.Size = new Size(161, 20);
             msgerror.TabIndex = 2;
-            msgerror.Text = "Credenciales invalidas";
+            msgerror.Text = "*Credenciales invalidas";
             msgerror.Visible = false;
             // 
             // textBoxusuario
             // 
-            textBoxusuario.Location = new Point(191, 112);
+            textBoxusuario.Location = new Point(191, 80);
             textBoxusuario.Name = "textBoxusuario";
             textBoxusuario.Size = new Size(125, 27);
             textBoxusuario.TabIndex = 3;
             // 
             // textBoxcontrasena
             // 
-            textBoxcontrasena.Location = new Point(191, 197);
+            textBoxcontrasena.Location = new Point(188, 146);
             textBoxcontrasena.Name = "textBoxcontrasena";
             textBoxcontrasena.PasswordChar = '*';
-            textBoxcontrasena.PlaceholderText = "Ingrese se contrasena";
+            textBoxcontrasena.PlaceholderText = "Ingrese su contrasena";
             textBoxcontrasena.Size = new Size(161, 27);
             textBoxcontrasena.TabIndex = 4;
             // 
             // buttonaceptar
             // 
-            buttonaceptar.Location = new Point(186, 300);
+            buttonaceptar.Location = new Point(99, 272);
             buttonaceptar.Name = "buttonaceptar";
             buttonaceptar.Size = new Size(94, 29);
             buttonaceptar.TabIndex = 5;
@@ -94,7 +95,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(531, 366);
+            button2.Location = new Point(651, 393);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 6;
@@ -104,7 +105,7 @@
             // 
             // buttoncancelar
             // 
-            buttoncancelar.Location = new Point(322, 300);
+            buttoncancelar.Location = new Point(222, 272);
             buttoncancelar.Name = "buttoncancelar";
             buttoncancelar.Size = new Size(94, 29);
             buttoncancelar.TabIndex = 7;

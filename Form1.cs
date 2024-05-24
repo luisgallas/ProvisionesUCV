@@ -5,11 +5,15 @@ namespace ProvisionesUCV
         public Form1()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //this.BackgroundImage = Image.FromFile("\"C:\\Users\\pedfe\\OneDrive\\Pictures\\logouc.png\"");
+            //this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,8 +38,8 @@ namespace ProvisionesUCV
 
         private void buttoncancelar_Click(object sender, EventArgs e)
         {
-            textBoxusuario.Clear(); 
-            textBoxcontrasena.Clear(); 
+            textBoxusuario.Clear();
+            textBoxcontrasena.Clear();
         }
     }
 }

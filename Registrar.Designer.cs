@@ -34,6 +34,7 @@
             textBoxusuarionuevo = new TextBox();
             textBoxcontrasenanuevo = new TextBox();
             msgregistrado = new Label();
+            buttonCancelar = new Button();
             SuspendLayout();
             // 
             // buttonregistrar
@@ -88,11 +89,22 @@
             msgregistrado.Text = "Usuario Registrado";
             msgregistrado.Visible = false;
             // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Location = new Point(338, 303);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(94, 29);
+            buttonCancelar.TabIndex = 6;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
             // Registrar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonCancelar);
             Controls.Add(msgregistrado);
             Controls.Add(textBoxcontrasenanuevo);
             Controls.Add(textBoxusuarionuevo);
@@ -114,5 +126,6 @@
         private TextBox textBoxusuarionuevo;
         private TextBox textBoxcontrasenanuevo;
         private Label msgregistrado;
+        private Button buttonCancelar;
     }
 }

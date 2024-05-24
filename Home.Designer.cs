@@ -48,6 +48,7 @@
             Controls.Add(label1);
             Name = "Home";
             Text = "Home";
+            Load += Home_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -15,6 +15,14 @@ namespace ProvisionesUCV
         public Home()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
