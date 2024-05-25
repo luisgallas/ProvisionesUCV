@@ -30,11 +30,11 @@ namespace ProvisionesUCV
         {
             string usuarioNuevo = textBoxusuarionuevo.Text;
             string contrasenaNueva = textBoxcontrasenanuevo.Text;
-             if (string.IsNullOrEmpty(usuarioNuevo) || string.IsNullOrEmpty(contrasenaNueva))// || string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido))
+             if (string.IsNullOrEmpty(usuarioNuevo) || string.IsNullOrEmpty(contrasenaNueva))// 
              {
                  MessageBox.Show("Debe rellenar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                 textBoxcontrasenanuevo.Focus(); 
-                textBoxcontrasenanuevo.Focus() ;    
+                 //textBoxcontrasenanuevo.Focus(); 
+                 //textBoxcontrasenanuevo.Focus() ;    
                  return;
              }
             /*if (string.IsNullOrEmpty(textBoxusuarionuevo.Text))
@@ -45,7 +45,7 @@ namespace ProvisionesUCV
             }*/
             else
             {
-                msgregistrado.Visible = true;
+                //msgregistrado.Visible = true;
                 MessageBox.Show("Usuario Registrado","Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

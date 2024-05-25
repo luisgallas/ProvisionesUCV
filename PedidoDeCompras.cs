@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProvisionesUCV
 {
-    public partial class Home : Form
+    public partial class PedidoDeCompras : Form
     {
-        public Home()
+        public PedidoDeCompras()
         {
             InitializeComponent();
             Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
@@ -20,22 +20,10 @@ namespace ProvisionesUCV
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void PedidoDeCompras_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void registrarPedidoDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PedidoDeCompras pedidoDeCompras = new PedidoDeCompras();
-            pedidoDeCompras.Show();
-        }
     }
 }
-    
-

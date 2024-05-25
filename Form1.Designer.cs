@@ -60,7 +60,7 @@
             // 
             msgerror.AutoSize = true;
             msgerror.ForeColor = Color.Red;
-            msgerror.Location = new Point(131, 196);
+            msgerror.Location = new Point(188, 188);
             msgerror.Name = "msgerror";
             msgerror.Size = new Size(161, 20);
             msgerror.TabIndex = 2;

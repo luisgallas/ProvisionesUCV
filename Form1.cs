@@ -34,6 +34,8 @@ namespace ProvisionesUCV
         {
             Registrar ventana1 = new Registrar();
             ventana1.Show();
+            /*PedidoDeCompras ventanaPedidoCompras = new PedidoDeCompras();
+            ventanaPedidoCompras.Show(); */   
         }
 
         private void buttoncancelar_Click(object sender, EventArgs e)

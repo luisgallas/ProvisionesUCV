@@ -28,33 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            menuStrip1 = new MenuStrip();
+            inicioToolStripMenuItem = new ToolStripMenuItem();
+            registrarPedidoDeComprasToolStripMenuItem = new ToolStripMenuItem();
+            consultarPedidoDeComprasToolStripMenuItem = new ToolStripMenuItem();
+            verificarPeididoDeComprasToolStripMenuItem = new ToolStripMenuItem();
+            atrasToolStripMenuItem = new ToolStripMenuItem();
+            salirToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(357, 197);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Home";
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { inicioToolStripMenuItem, atrasToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            inicioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarPedidoDeComprasToolStripMenuItem, consultarPedidoDeComprasToolStripMenuItem, verificarPeididoDeComprasToolStripMenuItem });
+            inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            inicioToolStripMenuItem.Size = new Size(59, 24);
+            inicioToolStripMenuItem.Text = "Inicio";
+            // 
+            // registrarPedidoDeComprasToolStripMenuItem
+            // 
+            registrarPedidoDeComprasToolStripMenuItem.Name = "registrarPedidoDeComprasToolStripMenuItem";
+            registrarPedidoDeComprasToolStripMenuItem.Size = new Size(288, 26);
+            registrarPedidoDeComprasToolStripMenuItem.Text = "Registrar pedido de compras";
+            registrarPedidoDeComprasToolStripMenuItem.Click += registrarPedidoDeComprasToolStripMenuItem_Click;
+            // 
+            // consultarPedidoDeComprasToolStripMenuItem
+            // 
+            consultarPedidoDeComprasToolStripMenuItem.Name = "consultarPedidoDeComprasToolStripMenuItem";
+            consultarPedidoDeComprasToolStripMenuItem.Size = new Size(288, 26);
+            consultarPedidoDeComprasToolStripMenuItem.Text = "Consultar pedido de compras";
+            // 
+            // verificarPeididoDeComprasToolStripMenuItem
+            // 
+            verificarPeididoDeComprasToolStripMenuItem.Name = "verificarPeididoDeComprasToolStripMenuItem";
+            verificarPeididoDeComprasToolStripMenuItem.Size = new Size(288, 26);
+            verificarPeididoDeComprasToolStripMenuItem.Text = "Verificar peidido de compras";
+            // 
+            // atrasToolStripMenuItem
+            // 
+            atrasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
+            atrasToolStripMenuItem.Name = "atrasToolStripMenuItem";
+            atrasToolStripMenuItem.Size = new Size(52, 24);
+            atrasToolStripMenuItem.Text = "Salir";
+            // 
+            // salirToolStripMenuItem
+            // 
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new Size(224, 26);
+            salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(menuStrip1);
             Name = "Home";
             Text = "Home";
             Load += Home_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem inicioToolStripMenuItem;
+        private ToolStripMenuItem registrarPedidoDeComprasToolStripMenuItem;
+        private ToolStripMenuItem consultarPedidoDeComprasToolStripMenuItem;
+        private ToolStripMenuItem verificarPeididoDeComprasToolStripMenuItem;
+        private ToolStripMenuItem atrasToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem;
     }
 }
