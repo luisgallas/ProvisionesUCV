@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProvisionesUCV
 {
-    public partial class Home : Form
+    public partial class HomeMenu : Form
     {
-        public Home()
+        public HomeMenu()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
+            /*Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
             this.BackgroundImage = img;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackgroundImageLayout = ImageLayout.Stretch;*/
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -34,6 +34,12 @@ namespace ProvisionesUCV
         {
             PedidoDeCompras pedidoDeCompras = new PedidoDeCompras();
             pedidoDeCompras.Show();
+        }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = new Pedido();
+            pedido.Show();  
         }
     }
 }

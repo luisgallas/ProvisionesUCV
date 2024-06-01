@@ -15,9 +15,9 @@ namespace ProvisionesUCV
         public PedidoDeCompras()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
+            /*Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
             this.BackgroundImage = img;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackgroundImageLayout = ImageLayout.Stretch;*/
         }
 
         private void PedidoDeCompras_Load(object sender, EventArgs e)
@@ -25,5 +25,9 @@ namespace ProvisionesUCV
 
         }
 
+        private void numericUpDown4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

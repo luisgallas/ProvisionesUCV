@@ -5,9 +5,9 @@ namespace ProvisionesUCV
         public Form1()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
+           /* Bitmap img = new Bitmap(Application.StartupPath + @"\img\login2.jpg");
             this.BackgroundImage = img;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackgroundImageLayout = ImageLayout.Stretch;*/
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -20,8 +20,10 @@ namespace ProvisionesUCV
         {
             if (textBoxusuario.Text == "luis" && textBoxcontrasena.Text == "psd")
             {
-                Home ventana = new Home();
+               //this.Hide();
+                HomeMenu ventana = new HomeMenu();
                 ventana.Show();
+                
             }
             else
             {

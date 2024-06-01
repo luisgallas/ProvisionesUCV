@@ -1,6 +1,6 @@
 ﻿namespace ProvisionesUCV
 {
-    partial class Home
+    partial class HomeMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,7 @@
             registrarPedidoDeComprasToolStripMenuItem = new ToolStripMenuItem();
             consultarPedidoDeComprasToolStripMenuItem = new ToolStripMenuItem();
             verificarPeididoDeComprasToolStripMenuItem = new ToolStripMenuItem();
+            pedidosToolStripMenuItem = new ToolStripMenuItem();
             atrasToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
@@ -50,7 +51,7 @@
             // 
             // inicioToolStripMenuItem
             // 
-            inicioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarPedidoDeComprasToolStripMenuItem, consultarPedidoDeComprasToolStripMenuItem, verificarPeididoDeComprasToolStripMenuItem });
+            inicioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarPedidoDeComprasToolStripMenuItem, consultarPedidoDeComprasToolStripMenuItem, verificarPeididoDeComprasToolStripMenuItem, pedidosToolStripMenuItem });
             inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             inicioToolStripMenuItem.Size = new Size(59, 24);
             inicioToolStripMenuItem.Text = "Inicio";
@@ -72,7 +73,14 @@
             // 
             verificarPeididoDeComprasToolStripMenuItem.Name = "verificarPeididoDeComprasToolStripMenuItem";
             verificarPeididoDeComprasToolStripMenuItem.Size = new Size(288, 26);
-            verificarPeididoDeComprasToolStripMenuItem.Text = "Verificar peidido de compras";
+            verificarPeididoDeComprasToolStripMenuItem.Text = "Verificar pedido de compras";
+            // 
+            // pedidosToolStripMenuItem
+            // 
+            pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
+            pedidosToolStripMenuItem.Size = new Size(288, 26);
+            pedidosToolStripMenuItem.Text = "Pedidos";
+            pedidosToolStripMenuItem.Click += pedidosToolStripMenuItem_Click;
             // 
             // atrasToolStripMenuItem
             // 
@@ -84,18 +92,18 @@
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(224, 26);
+            salirToolStripMenuItem.Size = new Size(121, 26);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
-            // Home
+            // HomeMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
-            Name = "Home";
-            Text = "Home";
+            Name = "HomeMenu";
+            Text = "HomeMenu";
             Load += Home_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -111,5 +119,6 @@
         private ToolStripMenuItem verificarPeididoDeComprasToolStripMenuItem;
         private ToolStripMenuItem atrasToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem pedidosToolStripMenuItem;
     }
 }
